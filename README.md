@@ -10,3 +10,5 @@ This application serves as a media search portal where users can search for spec
 2. **Category Suggestions Row:** I added clickable suggestion chips (e.g., Nature, Architecture, Cyberpunk) below the main search bar to allow users to quickly search popular subjects with a single click.
 
 lalallalaalllaaaa
+
+mudila daaaa
