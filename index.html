@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LensLoop — Discover Visuals</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <h1 class="logo">LensLoop</h1>
+        <p class="tagline">Explore high-quality images from around the globe</p>
+      </div>
+
+      <form id="search-form" class="search-form">
+        <div class="input-wrapper">
+          <label for="search-input" class="sr-only">Search images</label>
+          <input 
+            id="search-input" 
+            type="search" 
+            placeholder="Search photos, topics, wallpaper..." 
+            aria-label="Search images"
+            required
+          />
+          <button type="button" id="clear-btn" class="clear-btn" aria-label="Clear search input">&times;</button>
+        </div>
+        <button type="submit" id="search-btn" class="btn-primary">Search</button>
+      </form>
+    </div>
+
+    <!-- Quick-Pick Suggestions Row -->
+    <div class="category-chips" aria-label="Popular search topics">
+      <span class="chips-label">Popular:</span>
+      <button type="button" class="chip">Nature</button>
+      <button type="button" class="chip">Architecture</button>
+      <button type="button" class="chip">Cyberpunk</button>
+      <button type="button" class="chip">Wildlife</button>
+      <button type="button" class="chip">Minimalism</button>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="main-content">
+    <div class="status-container">
+      <p id="status" class="status-text">Search to see results</p>
+    </div>
+
+    <!-- Empty Results Container (Target for Part 2) -->
+    <section id="results" class="results-grid" aria-live="polite"></section>
+  </main>
+
+  <!-- Script Loaded Before </body> -->
+  <script src="script.js"></script>
+</body>
+</html>
