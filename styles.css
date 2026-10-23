@@ -193,3 +193,37 @@ body {
 /* ==========================================================================
    LensLoop Styles — Modern Emerald & Dark Theme
    ========================================================================== */
+
+   /* Cards inside responsive grid */
+#results .card {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #1e293b;
+  display: flex;
+  flex-direction: column;
+}
+
+#results .card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+#results .card-body {
+  padding: 12px;
+}
+
+#results .card-title {
+  font-size: 0.95rem;
+  margin: 0 0 4px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#results .card-artist {
+  font-size: 0.8rem;
+  opacity: 0.75;
+  margin: 0;
+}
